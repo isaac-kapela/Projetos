@@ -52,5 +52,6 @@ import java.util.List;
     public void setJogos(List<Jogo> jogos) {
         this.jogos = jogos;
     }
+
 }
 

@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navegacao{
+    background-color: #ff7212;
+    color: white;
+    margin-left: 100px;
+    padding-left: 20px;
+
+}
+.conteudo{
+    margin-left: 120px;
+    margin-top:  50px;
+    margin-bottom: 50px;
+    width: 1000px;
+}
+
+.conteudo h1 {
+    font-size: 48px;
+}
+
+.conteudo h2 {
+    font-size: 14px;
+    font-weight: normal;
+}
+.conteudo img {
+    width: 600px;
+}
+.conteudo figcaption{
+    font-size: 12px;
+}
+
+.conteudo p {
+    line-height:  30px;
+    color: #484848;
+}
+
+.conteudo ul {
+    list-style: none;
+    padding: 0;
+}
+.conteudo li {
+    line-height:  30px;
+}
+.conteudo a {
+    color: #484848;
+}
