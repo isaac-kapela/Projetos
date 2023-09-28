@@ -7,7 +7,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class JogoService {
-    private rota: string = "http://localhost:8080/jogos"
+    private rota: string = "http://localhost:8080/jogos/"
 
     private jogoAserExcluidoSubject = new BehaviorSubject<any>(null);
     jogoAserExcluido$ = this.jogoAserExcluidoSubject.asObservable();

@@ -30,4 +30,10 @@ public class JogoController {
         return ResponseEntity.status(HttpStatus.CREATED).body(jogoRetornado);
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity excluir(@PathVariable int id){
+        jogoService.excluir(id);
+        return ResponseEntity.noContent().build();
+    }
+
 }
