@@ -1,0 +1,374 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2b2b2b;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navBar {
+    background-color: #2b2b2b;
+    color: white;
+    height: 50px;
+
+    
+    animation-name: navbar;
+    animation-duration: 4s;
+
+}
+
+.pagina_principal {
+    color: aliceblue;
+    vertical-align: top;
+	padding-bottom: 20px;
+    
+    
+}
+
+.pagina_principal span {
+    color: #f27609;
+    display: block;
+}
+
+.pagina_principal div {
+    display: inline-block;
+    height: 650px;
+}
+
+.navBar ul {
+    margin-top: 0px;
+    list-style: none;
+    padding-left: 0px;
+    text-align: right;
+    height: 50px;
+
+}
+
+.navBar li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.navBar li.icos-hamburguer {
+    display: none;
+
+}
+
+.navBar li.icos-hamburguer:hover {
+    color: #f27609;
+    cursor: pointer;
+    
+
+}
+
+
+.navBar a {
+    color: wheat;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    color: #f27609;
+}
+
+.perfil-img {
+
+    width: 40%;
+    text-align: center;
+    
+
+    animation-name: perfil-aniamacao;
+    animation-duration: 6s;
+
+}
+
+.perfil-img img {
+    width: 320px;
+	border-radius: 320px;
+	margin-top: 100px;
+
+}
+
+.perfil-titulo {
+
+    vertical-align: top;
+    width: 59%;
+
+    animation-name: titulo-aniamacao;
+    animation-duration: 10s;
+
+}
+
+.perfil-titulo h1 {
+    font-size: 58px;
+    margin-top: 200px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 54px;
+
+
+}
+
+.perfil-titulo h2 {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -26px;
+
+}
+
+.main {
+    padding-top: 80px;
+    padding-right: 180px;
+    padding-left: 80px;
+    padding-bottom: 100px;
+    
+    animation-name: conteudo;
+    animation-duration: 2s;
+}
+
+.main h1 {
+    color: white;
+    font-weight: normal;
+}
+
+.main h2 {
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.main h3 {
+    color: #f27609;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.main p {
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    line-height: 24px;
+    text-align: justify;
+
+}
+
+.img-curriculo {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 30px;
+
+}
+
+.caminho {
+    list-style: none;
+    padding-left: 0;
+    color: gray;
+}
+
+.caminho a {
+    color: gray;
+}
+
+.caminho li {
+    display: inline-block;
+}
+
+.icons-img {
+    margin-right: 8px;
+
+}
+
+.minatura {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.miniatura a {
+	text-decoration: none;
+}
+
+.minatura img {
+    border-radius: 40px;
+}
+
+.blackBox {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 120px;
+    transition: 2s;
+}
+
+.blackBox:hover {
+    opacity: 0.8;
+    transition: 1s;
+
+}
+
+.blackBox-text {
+    text-align: center;
+}
+
+.blackBox-text h1 {
+    font-size: 16px;
+    color: #f27609;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.blackBox-text h2 {
+    text-transform: none;
+    font-weight: 100;
+    margin-top: 0;
+
+}
+
+.img-projetos {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.link-de-voltar{
+    color: #f27609;
+}
+
+@keyframes perfil-aniamacao{
+    0% {opacity: 0; transform: translate(0px,20px)}
+    100% {opacity: 1; transform: translate(0px,0px)}
+
+}
+
+@keyframes titulo-aniamacao{
+    0% {opacity: 0; transform: translate(0px,-20px)}
+    100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+@keyframes conteudo{
+    0% {opacity: 0; transform: translate(-20px,0px)}
+    100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+@keyframes navbar{
+    0% {opacity: 0; }
+    50% {opacity:0}
+    100% {opacity: 1;}
+
+}
+
+@media (max-width: 1000px){
+.navBar li {
+    display: none;
+}
+.navBar li.icos-hamburguer{
+    display: inline-block;
+}
+.pagina_principal div{
+    display: block;
+    height: auto;
+}
+    .perfil-img {
+        width: 100%;
+        
+    }
+.perfil-img img {
+    max-width: 75%;
+	margin-top: 0;
+	max-width: 80%;
+
+
+        }
+
+.perfil-titulo{
+    width: 100%;
+    text-align: center;
+    
+}        
+
+.perfil-titulo h1{
+	margin-top: 30px;
+	font-size: 36px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.perfil-titulo h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+.main {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    overflow-wrap: break-word;
+  	word-wrap: break-word;
+}
+
+.main p{
+    text-align: left;
+    line-height: 30px;
+}
+.main a{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.caminho li{
+    font-size: 12px;
+
+}
+
+.img-curriculo {
+    float: none;
+    width: 100px;
+    margin-right: 0px;
+    border-radius: 30px;
+}
+
+.minatura{
+    max-width: 100%;
+    background-size: auto 100% ;
+}
+.blackBox{
+    opacity: 0.8;
+}
+.menujs{
+    height: auto;
+
+}
+
+.menujs ul{
+    height: auto;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+.menujs li{
+    display: block;
+    border-color: solid grey 1px;
+    width: 100%;
+    padding: 0;
+}
+
+}

@@ -94,6 +94,4 @@ public class Jogo {
         this.estaFavoritado = estaFavoritado;
     }
 
-
-
 }
