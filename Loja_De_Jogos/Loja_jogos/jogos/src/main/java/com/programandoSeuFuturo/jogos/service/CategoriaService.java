@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
 @Service
     public class CategoriaService {
         @Autowired
@@ -20,8 +19,6 @@ import java.util.List;
         public Categoria save(Categoria categoria){
             return categoriaRepository.save(categoria);
         }
-
-
 
 
     }
