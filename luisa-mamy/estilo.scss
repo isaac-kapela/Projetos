@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+@import "styles/cores.scss";
+@import "styles/header.scss";
+@import "styles/layout.scss";
+
+body {
+    background: #fff;
+    font-family: quicksand, sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-color: $-primary-ligtht;
+}
+
+button {
+    cursor: pointer;
+    font-family: quicksand, sans-serif;
+}
+
+svg{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
