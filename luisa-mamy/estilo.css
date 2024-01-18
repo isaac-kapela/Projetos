@@ -13,10 +13,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
 }
 
 i {
   color: white;
+  font-size: 45px;
+}
+
+.fa-solid {
+  margin-bottom: 60px;
 }
 
 .header-icones {
@@ -38,10 +45,10 @@ i {
   }
 }
 .header-botão {
-  border: 3px solid white;
+  border: 3px solid rgb(8, 0, 0);
   padding: 8px 24px;
   border-radius: 4px;
-  color: white;
+  color: rgb(3, 0, 0);
   background-color: transparent;
   transition: background-color 0.8s;
   text-decoration: none;
@@ -49,7 +56,7 @@ i {
 
 .header-botão:hover {
   border: 1px solid red;
-  background-color: red;
+  background-color: rgb(218, 9, 9);
   color: #000;
 }
 
@@ -58,6 +65,7 @@ i {
   align-items: center;
   justify-content: center;
   margin-top: 15px;
+  width: 400px;
 }
 
 @media screen and (max-width: 768px) {
@@ -93,7 +101,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(252, 220, 240, 0.3), white), url("/assets/medicina-estética.jpg");
+  background-image: linear-gradient(to bottom, white, rgba(252, 220, 240, 0.3)), url("/assets/fundo final.webp");
   left: 0;
   top: 0;
   width: 100%;
@@ -131,7 +139,7 @@ i {
 .botão_contato {
   padding: 14px;
   color: black;
-  background-color: red;
+  background-color: rgb(255, 0, 212);
   border: 0;
   font-size: 18px;
   font-weight: 600;
@@ -171,9 +179,9 @@ i {
   }
 }
 .sobre {
-  background-color: palevioletred;
+  background-color: rgb(253, 214, 229);
   overflow: hidden;
-  color: white;
+  color: rgb(12, 0, 0);
 }
 
 .sobre-content {
@@ -284,6 +292,10 @@ i {
     max-width: 740px;
   }
 }
+.img_footer {
+  width: 260px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -291,7 +303,7 @@ i {
   justify-content: center;
   padding: 54px 0;
   gap: 16px;
-  color: white;
+  color: rgb(5, 0, 0);
 }
 
 .footer-icons {
@@ -340,6 +352,122 @@ i {
 @media screen and (max-width: 768px) {
   .btn-zap img {
     max-width: 60px;
+  }
+}
+/* Reset de algumas propriedades padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilizando a barra de navegação */
+#navBar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+#navBar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navBar a {
+  text-decoration: none;
+  color: white;
+}
+
+#icos-hamburguer {
+  display: none; /* Ocultar ícone do hamburguer por padrão em telas maiores */
+}
+
+/* Estilizando a página principal */
+.pagina_principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.perfil-img img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.perfil-titulo {
+  text-align: center;
+}
+
+.perfil-titulo h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.perfil-titulo h2 {
+  font-size: 1.5em;
+  color: #8b0a63; /* Cor personalizada */
+  margin-bottom: 20px;
+}
+
+.icons-img {
+  color: #8b0a63; /* Cor personalizada */
+  margin-right: 10px;
+}
+
+/* Seção de habilidades */
+.habilidades {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.habilidades h3 {
+  font-size: 1.2em;
+  color: #8b0a63; /* Cor personalizada */
+  margin-bottom: 10px;
+}
+
+.habilidades p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilizando para telas menores (responsividade) */
+@media screen and (max-width: 768px) {
+  #navBar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #icos-hamburguer {
+    display: block;
+    cursor: pointer;
+  }
+  #navBar ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    text-align: center;
+  }
+  #navBar ul.active {
+    display: flex;
+    flex-direction: column;
+  }
+  #navBar li {
+    padding: 10px;
+    width: 100%;
   }
 }
 body {

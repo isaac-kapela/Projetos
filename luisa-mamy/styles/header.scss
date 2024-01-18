@@ -6,10 +6,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        text-emphasis: none;
     }
 
     i{
         color:white;
+        font-size: 45px;
+    }
+    .fa-solid {
+        margin-bottom: 60px;
+        
     }
 
     .header-icones{
@@ -37,18 +43,19 @@
     }
 
     .header-botão{
-        border:3px solid white;
+        border:3px solid rgb(8, 0, 0);
         padding: 8px 24px;
         border-radius: 4px;
-        color: white;
+        color: rgb(3, 0, 0);
         background-color: transparent;
         transition: background-color 0.8s;
         text-decoration: none;
+        
 
     }
     .header-botão:hover{
         border: 1px solid red;
-        background-color: red;
+        background-color: rgb(218, 9, 9);
         color: #000;
     }
 
@@ -57,6 +64,7 @@
         align-items: center;
         justify-content: center;
         margin-top: 15px;
+        width: 400px;
     }
 
     @media screen and (max-width: 768px){

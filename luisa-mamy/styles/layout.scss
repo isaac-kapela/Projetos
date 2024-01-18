@@ -11,7 +11,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(252, 220, 240, 0.3),white), url('/assets/medicina-estética.jpg');
+    background-image: linear-gradient(to bottom, white, rgba(252, 220, 240, 0.3)), url('/assets/fundo\ final.webp');
     left: 0;
     top: 0;
     width: 100%;
@@ -51,7 +51,7 @@
 .botão_contato{
         padding: 14px;
         color:black;
-        background-color: red;
+        background-color: rgb(255, 0, 212);
         border: 0;
         font-size: 18px;
         font-weight: 600;
@@ -97,9 +97,9 @@
     }
 }
 .sobre{
-    background-color: palevioletred;
+    background-color: rgb(253, 214, 229);
     overflow: hidden;
-    color: white;
+    color: rgb(12, 0, 0);
 }
 
 .sobre-content{
@@ -135,13 +135,15 @@
 }
 
 .servicos{
-    background-color:  white;
+    background-color:white;
     color:black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 54px 14px;
+    
+
 }
 
 .servicos-content h2{
@@ -163,6 +165,8 @@
     align-items: center;
     gap: 16px;
     padding: 0 44px 34px 44px;
+    
+
 }
 
 .servico-1{
@@ -216,6 +220,10 @@
      
 }
 
+.img_footer{
+    width: 260px;
+}
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -223,7 +231,7 @@
     justify-content: center;
     padding: 54px 0;
     gap: 16px;
-    color:white
+    color:rgb(5, 0, 0)
 }
 .footer-icons{
     display: flex;

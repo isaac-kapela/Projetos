@@ -7,10 +7,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
 }
 
 i {
   color: white;
+  font-size: 45px;
+}
+
+.fa-solid {
+  margin-bottom: 60px;
 }
 
 .header-icones {
@@ -32,10 +39,10 @@ i {
   }
 }
 .header-botão {
-  border: 3px solid white;
+  border: 3px solid rgb(8, 0, 0);
   padding: 8px 24px;
   border-radius: 4px;
-  color: white;
+  color: rgb(3, 0, 0);
   background-color: transparent;
   transition: background-color 0.8s;
   text-decoration: none;
@@ -43,7 +50,7 @@ i {
 
 .header-botão:hover {
   border: 1px solid red;
-  background-color: red;
+  background-color: rgb(218, 9, 9);
   color: #000;
 }
 
@@ -52,6 +59,7 @@ i {
   align-items: center;
   justify-content: center;
   margin-top: 15px;
+  width: 400px;
 }
 
 @media screen and (max-width: 768px) {
