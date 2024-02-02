@@ -17,14 +17,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </head>
 
 <body>
   <!-- navbar -->
   <nav class="navbar">
     <div class="navbar__content max-width mb-0">
-      <a href="/">
-        <img src="assets/LOgo_bento-removebg-preview.png" alt="Lucas Silva" />
+      <a href="/" data-aos="fade-up" data-aos-delay="400">
+        
+        <img 
+        data-aos="flip-up"
+        data-aos-delay="400"
+        data-aos-duration="1500"
+        src="assets/LOgo_bento-removebg-preview.png" alt="Lucas Silva" />
       </a>
       <ul class="navbar__links">
         <li><a href="#header">Início</a></li>
@@ -37,7 +46,7 @@
 
   <!-- header -->
   <header id="header" class="max-width">
-    <div class="header__left">
+    <div class="header__left" data-aos="zoom-out-right" data-aos-delay="350">
       <h1>Olá! Sou o DR. Bento Manzambi Daniel</h1>
       <p>
         Caros Amigos e Familiares,
@@ -67,11 +76,11 @@
 
       </p>
       <a href="https://api.whatsapp.com/send?phone=553491693734&text=eu%20vou%20para%20a%20formatura
-      " class="btn btn-primary">EU vou</a>
+      " class="btn btn-primary" data-aos="fade-down">EU vou</a>
     </div>
     <div class="header__right">
-      <div class="header__image">
-        <img src="assets/DR. bento.png" alt="Lucas Silva" class="lucas" />
+      <div class="header__image" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/DR. bento.png" alt="bento" class="lucas" />
         <img src="assets/abstract.svg" alt="background" class="background" />
       </div>
     </div>
@@ -130,7 +139,7 @@
         <span class="mb-m">bentomanzambi@gmail.com</span>
         <span>+55 34 9169-3734</span>
       </div>
-      <ul class="mb-l">
+      <ul class="mb-l" data-aos="fade-down">
         <li>
           <a href="https://www.instagram.com/bentomunsiku/"><img src="assets/instagram.svg" alt="Instagram" /></a>
         </li>
@@ -147,7 +156,7 @@
     </div>
   </footer>
   <!-- script -->
-  <script src="scripts/index.js"></script>
+  <script src="/js/index.js"></script>
 </body>
 
 </html>
