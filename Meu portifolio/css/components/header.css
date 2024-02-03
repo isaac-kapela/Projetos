@@ -25,7 +25,7 @@ header .header__left p {
 header .header__right .header__image {
   position: relative;
   line-height: 0;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 header .header__right .header__image::after {
