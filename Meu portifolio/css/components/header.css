@@ -36,9 +36,10 @@ header .header__right .header__image::after {
   border: 1px solid var(--tertiary-color);
   position: absolute;
   top: -1.5rem;
-  right: -1.5rem;
+  
   border-radius: 0.5rem;
   z-index: -1;
+  
 }
 
 header .header__right .header__image .lucas {
