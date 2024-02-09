@@ -1,0 +1,23 @@
+const {Service: ServiceModel} = require("../models/service");
+
+const serviceController = {
+    create: async(req,res) =>{
+        try {
+            const service ={
+                nome: req.body.nome,
+                descricao : req.body.descricao,
+                preco : req.body.preco,  
+                descricao: req.body.descricao,
+                orcamento: req.body.orcamento,
+                img: req.body.img,
+            };
+            const resposta = await ServiceModel.create(service);        
+        res.status(201).json({resposta, msg: "serviço criado com sucesso"});
+        } catch (error) {
+            
+        }
+    }
+
+}
+
+module.exports = serviceController;
