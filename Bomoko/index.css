@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navBar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.logo{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: whitesmoke;
+}
+ul{
+    list-style: none; 
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+.ativa{
+    color:#fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body, html{
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/header-bg.png');
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+    }
+
+.header-content h2{
+    font-size: 4vmin;
+    margin-bottom: 20px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.linha{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+     margin: 10px auto; 
+    border-radius: 5px;
+
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .coluna img{
+    width: 80%;
+}
+
+.row .coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventos .row{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+p{
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+.eventos .ctn{
+    margin-top: 30px;
+}
+
+.sobre{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/bg2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center ;
+}
+
+.sobre-content{
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre-content h1{
+    font-size: 7vmin;
+    margin: 50px;
+}
+
+.sobre-content p{
+    color: rgb(221, 221, 221);
+}
+
+.sobre-content .ctn{
+    margin-top: 40px;
+}
+
+.sobre-content .linha{
+    margin: 50px;
+}
+.tours .img-galeria {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+
+.img-galeria img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-coluna{
+    width: 40%;
+}
+.content-coluna h1{
+    font-size: 9vmin;
+    color: #484872;
+}
+
+.content-coluna p {
+    padding: 0;
+    margin: 30px auto;
+
+}
+.content-coluna .ctn{
+    margin-left: -100px;
+}
+.content-coluna .linha{
+    margin-left: -1px;
+}
+.img-coluna{
+    width: 60%;
+}
+@media only screen and (max-width: 850px) {
+    .menu-btn{
+        display:block;
+    }
+    .navBar{
+        padding: 0;
+    }
+    .logo{
+        padding: 15px;
+        font-size: 12px;
+         font-weight: bold;
+         margin-left: 5px;
+         margin-top: 15px;
+        
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .coluna{
+        margin: 20px auto;
+    }
+    .coluna img {
+        max-width: 90%;
+    }
+
+    .sobre-content{
+        width: 100%;
+    }
+
+    .tours .coluna{
+        width: 100%;
+    }
+    .img-galeria{
+        justify-content: center;
+        align-items: center;
+    }
+    .tours .img-galeria {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 60px;
+    }
+
+  }
