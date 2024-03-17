@@ -141,7 +141,7 @@ p{
 .sobre{
     width: 100%;
     height: 100vh;
-    background-image: url('./assets/bg2.png');
+    background-image: url('./assets/muito\ gente.jpg    ');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,6 +207,98 @@ p{
 .img-coluna{
     width: 60%;
 }
+/* Estilos para o footer */
+/* Estilos para o footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo-text {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.contact span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #666;
+}
+
+/* Media Query para tornar o footer responsivo */
+@media only screen and (max-width: 850px) {
+    .container {
+        width: 90%;
+    }
+    .footer-section h2{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .links ul{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact span{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        min-width: auto;
+        margin-bottom: 30px;
+    }
+}
+
+
 @media only screen and (max-width: 850px) {
     .menu-btn{
         display:block;
