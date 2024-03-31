@@ -17,10 +17,11 @@
 }
 
 .content-box h2 {
-    font-weight: 400;
-    font-size: 36px;
-    color: orangered;
+    font-weight: 600; /* Alterado o peso da fonte */
+    font-size: 24px; /* Reduzido o tamanho da fonte para torná-lo mais responsivo */
+    color: #ff4500; /* Alterada a cor do texto para laranja avermelhado */
 }
+
 
 .content-box label {
     display: inline-block;
@@ -356,8 +357,8 @@
 /* Larger than 1200px */
 @media (min-width: 1200px) {
     .content-box {
-        /* margin-left: 15%; */
-        width: 100px;
+        margin-left: 15%;
+        width: 900px; 
     }
 }
 
