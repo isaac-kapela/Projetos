@@ -38,7 +38,7 @@ export default function Footer() {
                 <label>Lorem ipsum dolor sit amet consectetur adipisi</label>
                 <input id="emailInput" type="email" placeholder="Mande um email para mim" value={email} onChange={(e) => setEmail(e.target.value)} />
                 <div className="social-share">
-                  <button id="sendEmailBtn" onClick={EnviarEmail}></button>
+                  <button  id="sendEmailBtn" onClick={EnviarEmail}><img className='imIcon' width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow"/></button>
                   <div className="mideia-social">
                     <a href="https://www.instagram.com/anjosgarimpos/" target="_blank" rel="noopener noreferrer"><img className="imIcon" width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a> 
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img className="imIcon" width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></a>

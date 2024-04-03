@@ -50,7 +50,7 @@ export const FooterContainer = styled.footer`
     transform: scale(1.1);
 }
 
-.imIcon {
+.imIcon  {
     width: 25px;
     color: #fff; /* Adicionando a cor do ícone */
 }
