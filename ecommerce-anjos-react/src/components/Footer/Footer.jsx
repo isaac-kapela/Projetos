@@ -26,6 +26,7 @@ export default function Footer() {
                 <label>Cep: blbla79</label><br />
                 <label>Telefone: (11) 0000-0000</label><br />
               </div>
+              
               <div className="icon-footer f2">
                 <h4>Postagens recentes</h4>
                 <label>Rua: bla bla bla</label><br />
@@ -33,6 +34,7 @@ export default function Footer() {
                 <label>Cep: blbla79</label><br />
                 <label>Telefone: (11) 0000-0000</label><br />
               </div>
+              
               <div className="icon-footer f3">
                 <h4>anjosgarimpos</h4>
                 <label>Lorem ipsum dolor sit amet consectetur adipisi</label>
@@ -46,7 +48,9 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
+              
             </div>
+            <p className='criador'>Desenvolvido por kapela,isaac</p>
           </div>
         </footer>
       </S.FooterContainer>

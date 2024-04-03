@@ -55,12 +55,25 @@ export const FooterContainer = styled.footer`
     color: #fff; /* Adicionando a cor do ícone */
 }
 
+.criador{
+    margin-left: 70px;
+    background-color: white;
+    color:black;
+    width:250px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
 /* Estilos para telas menores */
 
 @media screen and (max-width: 768px) {
     .footer-box {
         flex-direction: column;
         align-items: center;
+    }
+    .criador{
+        margin-top:5px;
     }
 
     .icon-footer input[type="email"],
