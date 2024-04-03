@@ -1,0 +1,434 @@
+import styled from 'styled-components';
+import ImgFundo from '../../assets/bg.jpg'
+
+export const ConteudoContainer = styled.main`
+
+.content {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url(${ImgFundo});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content-box {
+  margin-left: 10%;
+}
+
+.content-box h2 {
+  font-weight: 600; /* Alterado o peso da fonte */
+  font-size: 24px; /* Reduzido o tamanho da fonte para torná-lo mais responsivo */
+  color: #ff4500; /* Alterada a cor do texto para laranja avermelhado */
+}
+
+
+.content-box label {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.content-box label span {
+  color: orangered;
+}
+
+.content-box a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  color: black;
+  letter-spacing: 3px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 4px 4px 10px #b7b6b6, -4px -4px 10px #fff;
+}
+
+.content-box a:hover {
+  box-shadow: -4px -4px 10px #b7b6b6, 4px 4px 10px #fff;
+}
+
+/* Categoria */
+
+.categoria {
+  background-color: #fbf9f9;
+  margin: 80px 0;
+}
+
+.categoria-titulo {
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.categoria-titulo {
+  text-align: center;
+}
+
+.categoria .categoria-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categoria .categoria-box .box {
+  margin: 30px 20px;
+}
+
+.categoria .categoria-box .box img {
+  width: 600px;
+  border-radius: 5px;
+  height: 328px;
+}
+
+.categoria .categoria-box .box-content {
+  position: absolute;
+  z-index: 1;
+  margin-left: 30px;
+  margin-top: 100px;
+}
+
+.categoria .categoria-box .box-content h3 {
+  color: rgb(255, 103, 103);
+}
+
+.categoria .categoria-box .box-content label {
+  display: block;
+  font-size: 30px;
+  color: rgb(255, 103, 103);
+}
+
+.categoria .categoria-box .box-content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 25px;
+  font-size: 14px;
+  background: white;
+  transition: all 0.19s ease-in;
+  color: black;
+}
+
+.categoria .categoria-box .box-content a:hover {
+  background: rgb(255, 237, 237);
+}
+
+.categoria .categoria-box .box-content .b1 {
+  margin-left: 370px;
+  text-align: right;
+  margin-top: 100px;
+}
+
+.categoria .categoria-box .b1 h3 {
+  color: rgb(91, 253, 202);
+}
+
+.categoria .categoria-box .b1 label {
+  color: rgb(91, 253, 202);
+}
+
+.categoria .categoria-box .b1 {
+  margin-left: 340px;
+}
+
+.box-content a {
+  border-radius: 30px;
+}
+
+/* Mais comprados */
+
+.maisCrompados {
+  padding: 50px;
+  background: #fbf9f9;
+  margin: 50px 0;
+}
+
+.maisComprados-box .maisComprados-titulo {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.items-mais-comprados {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.items-mais-comprados .item-mais-comprado {
+  padding: 20px;
+  margin: 80px 30px;
+  height: 300px;
+}
+.maisComprados-Image{
+  width: 200px;
+}
+
+// .items-mais-comprados .item-mais-comprado .maisComprados-Image img {
+//    width: 100px;
+//    height: 150px;
+// }
+
+.items-mais-comprados .item-mais-comprado .maisComprados-body {
+  margin-top: 15px;
+}
+
+.items-mais-comprados .item-mais-comprado .maisComprados-body h4 {
+  color: gray;
+  font-weight: 400;
+}
+
+.items-mais-comprados .item-mais-comprado .maisComprados-body i {
+  font-size: 12px;
+  color: orange;
+}
+
+.items-mais-comprados .item-mais-comprado .maisComprados-body .preco label .oferta {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* produtos mais populares */
+
+.produto-Mais-Populares {
+  padding: 50px;
+  margin-bottom: 120px;
+  background: #fbf9f9;
+}
+
+.produto-popular-box .produto-popular-titulo {
+  margin: 60px 0;
+}
+
+.produto-popular-box .produto-popular-titulo h2 {
+  text-align: center;
+}
+
+.items-mais-populares {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.items-mais-populares .item-mais-popular {
+  padding: 20px;
+  margin: 90px 60px;
+  height: 300px;
+}
+
+.items-mais-populares .item-mais-popular .produto-popular-image img {
+  height: 250px;
+}
+
+.items-mais-populares .item-mais-popular .produtos-popular-body {
+  margin-top: 15px;
+}
+
+.items-mais-populares .item-mais-popular .produtos-popular-body h4 {
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.items-mais-populares .item-mais-popular .produtos-popular-body .preco label {
+  font-size: 15px;
+}
+
+.items-mais-populares .item-mais-popular .produtos-popular-body .preco label .oferta {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.produto-popular-box .botao-mais-popular {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.produto-popular-box .botao-mais-popular button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #dbcfcf;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s all ease-in;
+  letter-spacing: 1px;
+}
+
+.produto-popular-box .botao-mais-popular button:hover {
+  background: #f8dcdc;
+}
+
+/* Disconto */
+
+.novos-Descontos-box {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  background: #f7e7e7;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.novos-Descontos-box .novos-Descontos-content {
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 59px;
+  font-size: 32px;
+}
+
+.novos-Descontos-box .novos-Descontos-content p {
+  margin: 30px 0 0 50px;
+}
+
+.novos-Descontos-box .novos-Descontos-content .tempo {
+  margin: 60px 0 0 46px;
+  font-size: 30px;
+}
+
+.novos-Descontos-box .novos-Descontos-content .tempo label {
+  margin: 0 12px;
+}
+
+.novos-Descontos-box .novos-Descontos-content .tempo label span {
+  margin-left: 15px;
+}
+
+.novos-Descontos-box .desconto-iamge img {
+  width: 320px;
+  margin-right: 100px;
+  margin-top: 15px;
+}
+
+/* Nossos serviços */
+
+.nossoServicos-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.nossoServicos-box .item-nossoServicos {
+  text-align: center;
+  margin: 30px 40px;
+  width: 220px;
+
+  line-height: 35px;
+  padding: 15px;
+}
+
+.nossoServicos-box .item-nossoServicos .icon-nossoServicos {
+  padding: 30px 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 70px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 23px;
+  color: orange;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 35px;
+}
+
+.nossoServicos-box .item-nossoServicos .icon-nossoServicos:hover {
+  background: orange;
+  color: white;
+}
+
+.nossoServicos-box .item-nossoServicos .nossoServicos-body {
+  color: black;
+}
+
+.nossoServicos-box .item-nossoServicos .nossoServicos-body h3 {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.nossoServicos-box .item-nossoServicos .nossoServicos-body label {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Larger than 1200px */
+@media (min-width: 1200px) {
+  .content-box {
+      margin-left: 15%;
+      width: 900px; 
+  }
+}
+
+/* Between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content-box {
+      margin-left: 10%;
+  }
+}
+
+/* Between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-box {
+      margin-left: 5%;
+  }
+}
+
+/* Smaller than 767px */
+@media (max-width: 767px) {
+  .content-box {
+      margin-left: 3%;
+  }
+}
+
+/* Adjusting other elements for responsiveness */
+@media (max-width: 767px) {
+  #Categoria{
+      display: none;
+  }
+ 
+  .categoria .categoria-box .box {
+      margin: 20px 10px;
+  }
+
+  .maisComprados-box .items-mais-comprados .item-mais-comprado {
+      margin: 50px 10px;
+  }
+
+  .produto-Mais-Populares .items-mais-populares .item-mais-popular {
+      margin: 50px 10px;
+  }
+
+  .novos-Descontos-box {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .novos-Descontos-box .novos-Descontos-content .tempo {
+      margin: 20px 0 0 0;
+  }
+
+  .novos-Descontos-box .desconto-iamge img {
+      margin-right: 0;
+      margin-top: 0;
+  }
+
+  .nossoServicos-box .item-nossoServicos {
+      width: 100%;
+      margin: 20px 0;
+  }
+}
+
+`;
+
