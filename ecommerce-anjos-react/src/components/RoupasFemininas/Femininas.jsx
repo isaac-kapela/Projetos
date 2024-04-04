@@ -15,9 +15,9 @@ export default function Femininas() {
             <div className="calcados-box">
               
               <div className="container-item">
-              {/* <div className="calcado-titulo">
+               <div className="calcado-titulo">
                 <h2>Produtos populares</h2>
-              </div> */}
+              </div>
               <div className="items-calcados">
                 <div className="item-calcado">
                   <div className="calcado-image">

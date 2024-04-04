@@ -1,15 +1,15 @@
-// import Calcados from "./pages/calcados"
-import Femininas from "./pages/RoupasFemininas";
+import { BrowserRouter } from "react-router-dom";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer"
 export default function App() {
   return (
+    <BrowserRouter>
     <>
-     {/* <Calcados/> */}
-     <Header />
-     <Femininas/>
-     <Footer/>
-
+        <Header />
+        <Footer />
     </>
+    </BrowserRouter>
+
   )
 }
