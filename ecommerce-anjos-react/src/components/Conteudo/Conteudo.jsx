@@ -71,7 +71,7 @@ export default function Conteudo() {
                                 </div>
                                 <div className="preco">
                                     <label className="oferta">$60.99</label>
-                                    <label>$49.99</label>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -91,7 +91,7 @@ export default function Conteudo() {
                                 </div>
                                 <div className="preco">
                                     <label className="oferta">$60.99</label>
-                                    <label>$49.99</label>
+                                
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@ export default function Conteudo() {
                                 </div>
                                 <div className="preco">
                                     <label className="oferta">$60.99</label>
-                                    <label>$49.99</label>
+                                    
                                 </div>
                             </div>
                         </div>
