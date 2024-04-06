@@ -1,95 +1,92 @@
+// Footer_style.js
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-/* Estilos padrão do footer */
-
-.footer {
+  /* Estilos padrão do footer */
+  .footer {
     background-color: #333;
     color: #fff;
     padding: 50px 0;
-}
+  }
 
-.footer-box {
+  .footer-box {
     display: flex;
     justify-content: space-around;
-}
+  }
 
-.icon-footer {
+  .icon-footer {
     text-align: center;
-}
+  }
 
-.icon-footer h4 {
+  .icon-footer h4 {
     font-size: 20px;
     margin-bottom: 20px;
-}
+  }
 
-.icon-footer label {
+  .icon-footer label {
     font-size: 16px;
     line-height: 1.5;
-}
+  }
 
-.icon-footer input[type="email"],
-.icon-footer button {
+  .icon-footer input[type="email"],
+  .icon-footer button {
     width: 100%;
     padding: 10px;
     margin-top: 10px; /* Ajuste conforme necessário */
     border: none;
     border-radius: 5px;
-}
+  }
 
-.mideia-social {
+  .mideia-social {
     margin-top: 20px;
-}
+  }
 
-.mideia-social a {
+  .mideia-social a {
     margin-right: 10px;
     transition: transform 0.3s ease;
-}
+  }
 
-.mideia-social a:hover {
+  .mideia-social a:hover {
     transform: scale(1.1);
-}
+  }
 
-.imIcon  {
+  .imIcon {
     width: 25px;
     color: #fff; /* Adicionando a cor do ícone */
-}
+  }
 
-.criador{
+  .criador {
     margin-left: 70px;
     background-color: white;
-    color:black;
-    width:250px;
+    color: black;
+    width: 250px;
     border-radius: 5px;
     text-align: center;
+  }
 
-}
-
-/* Estilos para telas menores */
-
-@media screen and (max-width: 768px) {
+  /* Estilos para telas menores */
+  @media screen and (max-width: 768px) {
     .footer-box {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-    .criador{
-        margin-top:5px;
+    .criador {
+      margin-top: 5px;
     }
 
     .icon-footer input[type="email"],
     .icon-footer button {
-        width: 80%; /* Reduz a largura para melhor ajuste em telas menores */
+      width: 80%; /* Reduz a largura para melhor ajuste em telas menores */
     }
-}
+  }
 
-@media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .icon-footer h4 {
-        font-size: 18px; /* Reduz o tamanho do título */
+      font-size: 18px; /* Reduz o tamanho do título */
     }
 
     .icon-footer label {
-        font-size: 14px; /* Reduz o tamanho do texto */
+      font-size: 14px; /* Reduz o tamanho do texto */
     }
-}
-
+  }
 `;
