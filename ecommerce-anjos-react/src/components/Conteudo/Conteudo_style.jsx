@@ -3,6 +3,9 @@ import ImgFundo from '../../assets/bg.jpg'
 
 export const ConteudoContainer = styled.main`
 
+.estrela-icon{
+  width:15px
+}
 .content {
   display: flex;
   position: relative;

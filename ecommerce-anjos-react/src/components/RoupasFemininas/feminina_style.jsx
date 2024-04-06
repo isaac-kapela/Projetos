@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const SectionConteudo = styled.section`
 
-
 h2{
     text-align: center;
 }
@@ -11,6 +10,7 @@ h2{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    
   }
   
   .items-calcados .item-calcado {
@@ -21,6 +21,7 @@ h2{
   
   .items-calcados .item-calcado .calcado-image img {
     height: 250px;
+    margin-top: 50px;
   }
   
   .items-calcados .item-calcado .calcados-body {
@@ -47,6 +48,7 @@ h2{
   .calcados-box .botao-mais-popular {
     margin-top: 50px;
     text-align: center;
+    margin-bottom: 50px;
   }
   
   .calcados-box .botao-mais-popular button {
@@ -60,6 +62,7 @@ h2{
     cursor: pointer;
     transition: 0.2s all ease-in;
     letter-spacing: 1px;
+
   }
   
   .calcados-box .botao-mais-popular button:hover {

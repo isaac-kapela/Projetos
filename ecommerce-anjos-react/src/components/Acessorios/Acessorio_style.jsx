@@ -6,53 +6,52 @@ export const SectionConteudo = styled.section`
 h2{
     text-align: center;
 }
-.items-calcados {
+.items-acessorios {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
   
-  .items-calcados .item-calcado {
+  .items-acessorios .item-acessorio {
     padding: 20px;
     margin: 90px 60px;
     height: 300px;
   }
   
-  .items-calcados .item-calcado .calcado-image img {
+  .items-acessorios .item-acessorio .acessorio-image img {
     height: 250px;
-    margin-top: 50px;
   }
   
-  .items-calcados .item-calcado .calcados-body {
+  .items-acessorios .item-acessorio .acessorios-body {
     margin-top: 15px;
   }
   
-  .items-calcados .item-calcado .calcados-body h4 {
+  .items-acessorios .item-acessorio .acessorios-body h4 {
     font-weight: 400;
     margin-bottom: 5px;
     color: gray;
   }
   
-  .items-calcados .item-calcado .calcados-body .preco label {
+  .items-acessorios .item-acessorio .acessorios-body .preco label {
     font-size: 15px;
   }
   
-  .items-calcados .item-calcado .calcados-body .preco label .oferta {
+  .items-acessorios .item-acessorio .acessorios-body .preco label .oferta {
     display: inline-block;
     margin: 10px;
     text-decoration: line-through;
     color: gray;
   }
   
-  .calcados-box .botao-mais-popular {
+  .acessorios-box .botao-mais-popular {
     margin-top: 30px;
     text-align: center;
     margin-bottom: 50px;
     
   }
   
-  .calcados-box .botao-mais-popular button {
+  .acessorios-box .botao-mais-popular button {
     display: inline-block;
     padding: 12px 25px;
     background: #dbcfcf;
@@ -65,7 +64,7 @@ h2{
     letter-spacing: 1px;
   }
   
-  .calcados-box .botao-mais-popular button:hover {
+  .acessorios-box .botao-mais-popular button:hover {
     background: #f8dcdc;
   }
 `;

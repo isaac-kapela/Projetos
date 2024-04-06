@@ -1,3 +1,4 @@
+//RoupasFemininas --> Femininas.jsx
 import IMG1 from "../../assets/Roupas-femininas/IMG-1.png"
 import IMG2 from "../../assets/Roupas-femininas/IMG-2.png"
 import IMG3 from "../../assets/Roupas-femininas/IMG-3.png"
@@ -15,9 +16,9 @@ export default function Femininas() {
             <div className="calcados-box">
               
               <div className="container-item">
-               <div className="calcado-titulo">
+               {/* <div className="calcado-titulo">
                 <h2>Produtos populares</h2>
-              </div>
+              </div> */}
               <div className="items-calcados">
                 <div className="item-calcado">
                   <div className="calcado-image">
@@ -95,8 +96,7 @@ export default function Femininas() {
                       )
                     }
                   >
-                    {" "}
-                    Mais{" "}
+                    Mais
                   </button>
                 </div>
               </div>

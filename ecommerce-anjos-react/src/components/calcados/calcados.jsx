@@ -1,3 +1,4 @@
+//Calcados --> calcados.jsx
 import IMG1 from "../../assets/Calçados-IMG/img-1.png"
 import IMG2 from "../../assets/Calçados-IMG/img-2.png"
 import IMG3 from "../../assets/Calçados-IMG/img-7.png"
@@ -16,9 +17,9 @@ export default function calcados() {
             <div className="calcados-box">
               
               <div className="container-item">
-              <div className="calcado-titulo">
+              {/* <div className="calcado-titulo">
                 <h2>Produtos populares</h2>
-              </div>
+              </div> */}
               <div className="items-calcados">
                 <div className="item-calcado">
                   <div className="calcado-image">
@@ -81,6 +82,7 @@ export default function calcados() {
                   </div>
                   <div className="calcados-body">
                     <h4>camisa feminina</h4>
+
                     <div className="preco">
                       <label>$49.99</label>
                     </div>
