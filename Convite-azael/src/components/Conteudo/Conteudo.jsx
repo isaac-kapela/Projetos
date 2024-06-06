@@ -1,10 +1,22 @@
-import Video from "../../assets/videoConvite.mp4"
-export default function Conteudo() {
+
+import { useNavigate } from 'react-router-dom';
+import Video from "../../assets/videoConvite.mp4";
+import * as S from "./Conteudo_Style";
+
+function Conteudo() {
+  const navigate = useNavigate();
+
   return (
-    <>
-        <video autoPlay loop muted style={{width: "100%", height: "100%", objectFit: "cover"}}>
-            <source src={Video} type="video/mp4"/>
-        </video>
-    </>
-  )
+    <S.SectionConteudo>
+      <video autoPlay loop muted>
+        <source src={Video} type="video/mp4"/>
+      </video>
+
+      <button onClick={() => navigate('/convite')}>
+        Opções
+      </button>
+    </S.SectionConteudo>
+  );
 }
+
+export default Conteudo;
