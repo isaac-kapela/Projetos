@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const SectionConteudo = styled.section`
 
-
 h2{
     text-align: center;
 }

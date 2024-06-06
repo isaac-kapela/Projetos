@@ -14,7 +14,7 @@ export default function Header() {
     setAbrirMenu(!AbrirMenu);
   };
   return (
-    <BrowserRouter>
+    <BrowserRouter> 
       <S.HeaderContainer>
         <header>
           <div className="nav-container">

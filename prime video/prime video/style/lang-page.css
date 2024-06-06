@@ -1,0 +1,287 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: white;
+}
+
+header {
+    background-color:white;
+    padding: 10px 0;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navbar img {
+    width: 120px;
+    border-radius: 35px;
+
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.destque {
+    background-color:rgb(154, 193, 226);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    
+}
+
+.destque img {
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.destque:hover img  {
+    border: 2px solid rgb(47, 0, 255);
+    opacity: 1;
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+
+.destque h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: black;
+
+}
+
+.destque p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.destque a {
+    background-color: #ff9900;
+    color: #161616;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.Filmes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.card {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+    margin-right: 50px;
+    cursor: pointer;
+    
+}
+
+.card:hover img  {
+    border: 2px solid rgb(47, 0, 255);
+    opacity: 1;
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block; /* Define a imagem como bloco para centralização horizontal */
+    margin: 0 auto; /* Centraliza horizontalmente a imagem */
+}
+
+
+
+.card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #999;
+    margin: 10px 0;
+    margin-top: 8px;
+    margin-bottom: 20px
+}
+
+.card a {
+    background-color: #ff9900;
+    color: #161616;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-top: 15px;
+}
+
+.footer p {
+    color: aliceblue;
+    margin-right: 10px; 
+    font-size: 10px
+}
+
+.footer img {
+    width: 30px;
+    margin-right: 5px; 
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    
+    .navbar {
+        background-color: white; /* Adicione um plano de fundo branco para a navbar */
+        display: flex; /* Torna a navbar um contêiner flexível */
+        align-items: center; /* Centraliza verticalmente os elementos na navbar */
+        justify-content: space-between; /* Espaço uniforme entre a logo e a navbar */
+        padding: 0 20px;
+        
+    }   
+
+    .navbar img {
+        width: 90px;
+    
+    }
+    nav ul {
+        
+        display: flex; /* Torna a lista um contêiner flexível */
+        gap: 10px;
+        font-size: 12px;
+        align-items: center; /* Centraliza verticalmente os itens da lista com a logo */
+        margin-left: 10px; /* Adicione margem à esquerda para separar da logo */
+        margin-right: 300px;
+    }
+
+
+
+    main {
+        padding: 0 10px;
+    }
+
+    .destque {
+        padding: 10px;
+    }
+
+    .destque h1 {
+        font-size: 20px;
+    }
+
+    .destque p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .destque a {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .Filmes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center; /* Centraliza os elementos horizontalmente */
+        text-align: center; /* Centraliza o texto horizontalmente, se houver */
+        margin-right: auto; /* Define a margem direita como automática para centralizar a div */
+        width: 100%; /* Define a largura da div como 100% para ocupar a largura total da tela */
+        margin-left: 10px;
+    
+    
+    }
+
+    .card {
+        padding: 10px;
+        flex: 1;
+        width: 55%;
+        
+    }
+
+    .card h3 {
+        font-size: 12px;
+        
+        
+    }
+
+    .card p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .card a {
+        padding: 8px 16px;
+        font-size: 9px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer p {
+        font-size: 8px;
+    }
+
+    .footer img {
+        width: 20px;
+    }
+}

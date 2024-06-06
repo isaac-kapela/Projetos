@@ -366,7 +366,6 @@ export const ConteudoContainer = styled.main`
   font-weight: 300;
 }
 
-/* Larger than 1200px */
 @media (min-width: 1200px) {
   .content-box {
       margin-left: 15%;

@@ -7,7 +7,7 @@ export default function Footer() {
 
   const EnviarEmail = () => {
     const subject = "Estou Interessado em um produto";
-    const body = `Ola, Espero que esteja bem, me chamo: {Digite o seu nome}  , gostaria pedir mais informaçoes sobre esse pedido {digite o nome do produto}`;
+    const body = `Ola, Espero que esteja bem, me chamo {Digite o seu nome}  , gostaria pedir mais informações sobre esse pedido {digite o nome do produto}`;
 
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
       "kapelajoao4@gmail.com"
