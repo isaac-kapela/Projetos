@@ -6,6 +6,7 @@ export const SectionInicio = styled.button`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
   background-image: url(${props => props.img});
   background-position: center;
   background-repeat: no-repeat;
@@ -19,7 +20,7 @@ export const SectionInicio = styled.button`
   padding: 1rem 2rem;
   border-radius: 50px;
   background-color: black;
-  color: white;
+  color: white; 
   font-weight:bold;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
