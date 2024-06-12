@@ -11,9 +11,6 @@ export const ModalContainer = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 2;
-  outline-color: purple; 
-  outline-width: 15px;
-
 `;
 
 export const ModalContent = styled.div`
@@ -23,6 +20,7 @@ export const ModalContent = styled.div`
   max-width: 80%;
   max-height: 80%;
   overflow: auto;
+  position: relative; /* Adicionado para posicionar o botão de fechar */
 `;
 
 export const CloseButton = styled.button`
@@ -35,31 +33,12 @@ export const CloseButton = styled.button`
   cursor: pointer;
 `;
 
-export const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-`;
-
-export const Label = styled.label`
-  font-weight: bold;
-`;
-
-export const Input = styled.input`
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-`;
-
-export const SubmitButton = styled.button`
-  padding: 10px;
-  background-color: black;
-  color: white;
+export const CloseModalButton = styled.button`
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ccc;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-`;
-
-export const ErrorMessage = styled.p`
-  color: red;
+  float: right;
 `;

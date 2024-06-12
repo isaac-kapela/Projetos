@@ -1,17 +1,38 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import * as S from './Modal_style';
+import { Document, Packer, Paragraph } from 'docx';
 
 const ModalConfirmacaoPresenca = ({ closeModal }) => {
   const [nome, setNome] = useState('');
-  const [numeroPessoas, setNumeroPessoas] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aqui você pode fazer o que quiser com os dados do formulário
-    console.log('Nome:', nome);
-    console.log('Número de pessoas:', numeroPessoas);
-    // Fechar o modal após o envio do formulário
+    
+    const doc = new Document({
+      sections: [
+        {
+          properties: {},
+          children: [
+            new Paragraph(`Nome: ${nome}`),
+          ],
+        },
+      ],
+    });
+
+    try {
+      const blob = await Packer.toBlob(doc);
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'Informações-presenca.docx');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Erro ao gerar o arquivo DOCX:', error);
+    }
+
     closeModal();
   };
 
@@ -27,14 +48,6 @@ const ModalConfirmacaoPresenca = ({ closeModal }) => {
             id="nome"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
-            required
-          />
-          <label htmlFor="numeroPessoas">Número de Pessoas:</label>
-          <input
-            type="number"
-            id="numeroPessoas"
-            value={numeroPessoas}
-            onChange={(e) => setNumeroPessoas(e.target.value)}
             required
           />
           <button type="submit">Enviar</button>
