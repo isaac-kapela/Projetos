@@ -49,4 +49,5 @@ export const SectionConvite = styled.section`
     outline-color: purple; 
     outline-width: 15px;
   }
+    
 `;
