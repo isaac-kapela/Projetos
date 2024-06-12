@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SectionInicio = styled.section`
+export const SectionInicio = styled.button`
   position: relative;
   display: flex;
   justify-content: center;

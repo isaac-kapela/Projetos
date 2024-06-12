@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import ImgPantera from "../../assets/img-pantera.jpeg";
 
-export const SectionConteudo = styled.section`
+export const SectionConteudo = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: url(${ImgPantera});
+  background-image: url(${ImgPantera}); 
   background-size: cover;
   background-position: center;
 

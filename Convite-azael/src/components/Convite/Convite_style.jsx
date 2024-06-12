@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const SectionConvite = styled.section`
+export const SectionConvite = styled.button`
   
 `;

@@ -8,6 +8,7 @@ function Conteudo() {
 
   return (
     <S.SectionConteudo>
+      <div>
       <video autoPlay loop muted>
         <source src={Video} type="video/mp4"/>
       </video>
@@ -15,6 +16,7 @@ function Conteudo() {
       <button onClick={() => navigate('/convite')}>
         Opções
       </button>
+      </div>
     </S.SectionConteudo>
   );
 }
